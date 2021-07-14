@@ -15,7 +15,7 @@ namespace ApiCatalogoJogos.Controllers
         [HttpGet]
         public async Task<ActionResult<List<object>>> Obter()
         {
-            return Ok();
+            return Ok(); // Status 200 OK
         }
 
         [HttpGet("{idJogo:guid}")]
@@ -23,5 +23,30 @@ namespace ApiCatalogoJogos.Controllers
         {
             return Ok();
         }
+
+        [HttpPost]
+        public async Task<ActionResult<object>> InserirJogo(object jogo)
+        {
+            return Ok();
+        }
+
+        [HttpPut("{idJogo:guid}")]
+        public async Task<ActionResult> AtualizarJogo(Guid idJogo, object jogo)
+        {
+            return Ok();
+        }
+
+        [HttpPatch("{idJogo:guid}/preco/{preco:double}")]
+        public async Task<ActionResult> AtualizarJogo(Guid idJogo, object preco)
+        {
+            return Ok();
+        }
+
+        [HttpDelete("{idJogo:guid}")]
+        public async Task<ActionResult> ApagarJogo(Guid idJogo)
+        {
+            return Ok();
+        }
+
     }
 }

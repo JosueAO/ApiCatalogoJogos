@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="Controllers\V1\" />
+    <Folder Include="InputModel\" />
   </ItemGroup>
 
 </Project>
